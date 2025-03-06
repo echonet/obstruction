@@ -11,9 +11,7 @@ This repository offers a deep learning model that predicts the presence of LVOT 
 ## Running Inference 
 This script accepts a path to a directory containing A4C TTE echoes in DICOM format, and predicts the presence of left ventricular outflow tract (LVOT) obstruction. \
 To run inference: 
-1. Open utils.py and change the variable **weights_path** to the location of the model weights
-<img width="693" alt="Screenshot 2025-03-06 at 1 11 47 PM" src="https://github.com/user-attachments/assets/24813a10-a1a0-4eb3-837d-49e98db5a055" />
-
+1. Download the weights file. Place them in the same folder as the scripts predict_lvoto.py and utils.py.
 2. Run the following command:\
     python predict_lvoto.py --data_path <path_to_directory>\
     where **--data_path** is the full path to a directory of DICOM files; files must be of A4C TTEs
